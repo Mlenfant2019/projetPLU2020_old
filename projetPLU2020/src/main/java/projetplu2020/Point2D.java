@@ -15,8 +15,8 @@ public class Point2D {
 
     /**
      * Créer un Point2D à partir de deux paramètres
-     * @param x abscisse
-     * @param y ordonnee
+     * @param x int
+     * @param y int
      */
     public Point2D(int x,int y){
         this.x = x;
@@ -33,7 +33,7 @@ public class Point2D {
 
     /**
      * Créer un Point2D à partir d’un autre Point2D : un constructeur de recopie
-     * @param p point
+     * @param p Point2D
      */
     public Point2D(Point2D p){
         this.x = p.getX();
@@ -42,7 +42,7 @@ public class Point2D {
 
     /**
      * Renvoie l'abscisse d'un Point2D
-     * @return abscisse
+     * @return int
      */
     public int getX(){
         return this.x;
@@ -50,7 +50,7 @@ public class Point2D {
 
     /**
      * Renvoie l'ordonnee d'un Point2D
-     * @return ordonnee
+     * @return int
      */
     public int getY(){
         return this.y;
@@ -58,7 +58,7 @@ public class Point2D {
 
     /**
      * Modifier l'abscisse d'un Point2D
-     * @param x
+     * @param x int
      */
     public void setX(int x){
         this.x = x;
@@ -66,7 +66,7 @@ public class Point2D {
 
     /**
      * Modifier l'ordonnee d'un Point2D
-     * @param y ordonnee
+     * @param y int
      */
     public void setY(int y){
         this.y = y;
@@ -74,8 +74,8 @@ public class Point2D {
 
     /**
      * Modifier les deux coordonnées d’un Point2D à la fois (changer X et Y en une seule méthode)
-     * @param x abscisse
-     * @param y ordonnee
+     * @param x int
+     * @param y int
      */
     public void setPosition(int x,int y){
         this.x = x;
@@ -84,8 +84,8 @@ public class Point2D {
 
     /**
      * « Translater » un Point2D : ajouter un incrément (positif ou négatif) à ses coordonnées
-     * @param a ajout relatif abscisse
-     * @param b ajout relatif ordonnee
+     * @param a int
+     * @param b int
      */
     public void translate(int a,int b){
         this.x = this.getX() + a;
